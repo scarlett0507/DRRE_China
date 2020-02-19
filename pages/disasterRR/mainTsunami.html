@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>海啸</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">18分钟</em></p>
+    </blockquote>
+    <!-- 海啸介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于海啸</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">海啸<span class="tooltiptext">Tsunami</span></a>是一种具有强大破坏力的海浪。当地震发生于海底，因震波的动力而引起海水剧烈的起伏，形成强大的波浪，向前推进，将沿海地带一一淹没的自然现象，称之为海啸。</div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，海啸发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">发生原因</div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">详细信息</h2>
+              <div class="layui-colla-content">
+                <p>海啸通常由震源在海底下500公里以内、规模6.0以上的海底地震引起。海啸在海洋的传播速度大约是每小时五百到一千公里，不管海洋深度如何，波都可以传播过去，当海啸波进入陆坡后，由于深度变浅，波高突然增大，它的这种波浪运动所卷起的海涛，波高可达数十米，并形成“水墙”。由地震引起的波动与海面上的海浪不同，一般海浪只在一定深度的水层波动，而地震所引起的水体波动是从海面到海底整个水层的起伏。 <button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- 洪水发生原因的相关图片，id01是降雨，id02是高潮，id03是融雪 -->
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/disaster/tsunami.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+   
+       <!-- 洪水的例子，分别为中国和日本 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>海啸小科普</h3></legend>
+        </fieldset>
+    </div>
+    <!-- 中国与日本例子的入口，面板 -->
+    <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+      <div class="layui-card">
+        <div class="layui-card-header"><h2>我国会发生海啸吗？</h2></div>
+        <div class="layui-card-body">
+          <p><br>我国海区地处太平洋西部，濒临西北太平洋地震带。据历史记载，二千年以来，我国只发生过10次地震海啸，平均200年左右才出现一次。这表明我国沿海发生地震海啸的可能性很小。这是因为我国海区处于宽广大陆架上，水深较浅大都在200米以内，不利于地震海啸的形成与传播。所以，即使我国海区发生较强的地震，一般不会引起海底地壳大面积的垂直升降变化，缺乏引发海啸的大地震。当然，加强地震海啸发生机制的研究，准确预测和预报地震海啸仍然是必要的，对防范突发性地震海啸还是有意义的。我国近海海域虽不具备地震海啸的海洋条件，但地震引起1-2米波高的潮水涌上岸的情况还是发生过的。台湾及其附近有可能造成一定灾害。可见地震海啸仍是我国不容忽视的海洋灾害，尤其是闽台地区，本地地震海啸灾害的潜在危险仍然存在。<br>
+        </div>
+      </div>
+    </div>
+</div>
+   
+    <!-- 海啸的例子，分别为中国和日本 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>海啸预想浸水地图</h3></legend>
+        </fieldset>
+    </div>
+    <!-- 中国与日本例子的入口，面板 -->
+    <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+      <div class="layui-card">
+        <div class="layui-card-header"><h2>日本松坂市海啸</h2></div>
+        <div class="layui-card-body">
+          <p><br>历史上已经证明，过去约每100-150年南海海沟地震对日本三重县造成了巨大的破坏。为了提前做防灾准备，日本创建了三重县海啸危险地图。中国发生海啸的几率比较小，但是了解海啸仍然是必要的，对防范突发性地震海啸还是有意义的，故此以日本地图为例，了解海啸发生范围。<br>
+          <div><a class="layui-btn layui-btn-radius openJapan_btn" target="_blank">打开地图</a></div><br>
+          <!--  <a href="https://scarlett0507.github.io/0817map/">-->
+          <img border="0" width="86%" src="../../img/disaster/tsunamiMap.jpg"/>
+        </div>
+      </div>
+    </div>
+</div>
+ <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>视频：认识海啸</h3></legend>
+        </fieldset>
+    </div>  
+<div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+      <div class="layui-card">
+      <div class="layui-card-body">
+      <p align="left">海啸基本上就是强而有力的巨浪，它们大多都是因海底下的地震所致。它们的可怕威力一次就足以摧毁好几个社区，再把残骸拖回海中。这段影片就说明了海啸的成因与海啸警报发出后，疏散的重要性。<br></p>
+        </div>
+ <video class="center" width="480" height="360" controls="controls">
+  <source src="https://scarlett0507.github.io/disaster-video/tsunami.mp4" type="video/mp4" />
+</video>   
+<v><br>© 国家地理杂志 National Geographic Magazine</v>
+  
+   </div>
+  </div>
+  </div>
+  <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+       
+     <blockquote class="layui-elem-quote">
+    问题1：<em class="layui-word-aux">黄色浸水区域中的海啸避难的高度所至少需要多少米高？</em>
+    </blockquote> 
+    <blockquote class="layui-elem-quote">
+    问题2：<em class="layui-word-aux">你认为哪里还需要设置海啸避难所？</em>
+    </blockquote> 
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  本サイトに関するお問い合わせは</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <font size="1.5">までお願いします。</font>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+    <script type="text/javascript" src="../../js/innerPage_tsunami.js"></script>
+</body>
+</html>

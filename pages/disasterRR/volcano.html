@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>火山</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+    <style>
+       
+   </style>
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">18分钟</em></p>
+    </blockquote>
+    <!-- 洪水介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于火山</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">火山<span class="tooltiptext">Volcano</span></a>是地表下在岩浆库中的高温岩浆及其有关的气体、碎屑从地壳中喷出而形成的，具有特殊形态的地质结构。火山可以分为死火山、休眠火山和活火山。在一段时间内，没有出现喷发事件的活火山叫做睡火山休眠火山。</div>
+    <div class="content"><p>火山爆发可能会造成许多危害，常伴有地震，影响范围不仅在火山爆发附近。火山灰可能对飞机构成威胁，大型爆发可能会影响气温。虽然火山喷发会对人类造成危害，但同时它也带来一些好处。例如：可以促进宝石的形成；扩大陆地的面积；作为观光旅游考察景点，推动旅游业，如日本的富士山。</div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">火山的成因</div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">聚合板块边缘</h2>
+              <div class="layui-colla-content">
+                <p>当板块互相推挤，密度较高的一边会下降到另一边下方，称作俯冲，发生俯冲的带状地区称为俯冲带或聚合性板块交界。地底的高温会将隐没的板块熔融，形成岩浆。岩浆借由浮力缓缓上升，最后聚集成为岩浆库，就是火山底部储存岩浆的场所。而当岩浆中的气体压力累积到一个程度，火山就爆发了。例如：埃特纳火山，与在环太平洋火山带地区的火山。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">分离板块边缘</h2>
+              <div class="layui-colla-content">
+                <p>有些火山分布在板块分离的带状地区。在这种地区，高温的地幔物质会上升，形成海底火山山脉，称作中洋脊。当中洋脊在海平面以上时，形成火山岛; 例如冰岛。<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">热点</h2>
+              <div class="layui-colla-content">
+                <p>还有一些火山并不位于板块的交接处，例如美国黄石复式破火山口及夏威夷群岛。火山学家称这些火山是坐落于“热点”上。当板块在热点上做水平移动时，便有一连串的火山生成。这样作用连续发生后，会造成一系列的火山岛群，而离热点越远的火山其生成年代越老。<button onclick="document.getElementById('id03').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- 洪水发生原因的相关图片，id01是降雨，id02是高潮，id03是融雪 -->
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/disaster/volcano01.png" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="id02" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/disaster/hotspot.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="id03" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/disaster/bing.jpeg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <!-- 洪水的例子，分别为中国和日本 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>世界火山分布地图</h3></legend>
+        </fieldset>
+    </div>
+   <!-- 中国与日本例子的入口，面板 -->
+    <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-card">
+        <div class="layui-card-body">
+         　<p align="left">受火山成因的影响，世界各地的火山大多分布在板块交界处，但仍有部分例外（热点）。主要的火山带包括：<br></p>
+           <p align="left">环太平洋火山带：包括千岛群岛、日本、琉球群岛、台湾及其附属岛屿、菲律宾群岛，接着连接印度尼西亚、巴布亚新几内亚、所罗门群岛。火山数目约占全世界之75%，且活动相当频繁。<br></p>
+           <p align="left">中洋脊火山带：包括太平洋、大西洋及印度洋三大洋的中洋脊，总长度约80,000公里，约成W形分布。但中洋脊上火山的分布并不平均，集中于大西洋中洋脊，有60余座。中洋脊的火山以海底火山为主，也有少部分的火山岛（例：塞舌尔、冰岛）。<br></p>
+           <p align="left">东非火山带：东非大裂谷是由非洲板块的地壳运动形成，地质学家预测几百万年后，东非可能会分裂成两个不同的板块，至今地质活动依然频繁。<br></p>
+           <p align="left">地中海─喜马拉雅火山带：西从比利牛斯山始，迄喜马拉雅山，全长约十万公里，但分布不均。欧洲部分多分布于意大利，例如维苏威火山、埃特纳火山等。中段几乎无火山。亚洲部分，在印澳板块及欧亚板块的交界处分布着若干火山群。<br>
+           <br></p>
+          <div><a class="layui-btn layui-btn-radius openVolcano_btn" target="_blank">打开地图</a></div><br>
+          <!--  <a href="ChinaFlood.html">-->
+          <img border="0" width="85%" src="../../img/disaster/volcanoWorld.jpg" />
+          <v><br>世界火山分布地图 © MapCruzin</v>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+      <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>视频：认识火山</h3></legend>
+        </fieldset>
+    </div>  
+    
+ <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+      <div class="layui-card">
+      <div class="layui-card-body">
+      <p align="left">火山十分壮丽，但也具一定杀伤力。每年有超过50次火山爆发让地球不得安宁。这部影片带您了解火山形成过程、爆发原因及密布区域。<br></p>
+        </div>
+ <video class="center" width="480" height="360" controls="controls">
+  <source src="https://scarlett0507.github.io/disaster-video/volcano.mp4" type="video/mp4" />
+</video>   
+<v><br>© 国家地理杂志 National Geographic Magazine</v>
+  
+   </div>
+  </div>
+  </div>
+   <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+    
+     <blockquote class="layui-elem-quote">
+    问题1：<em class="layui-word-aux">看完世界火山分布地图，你知道中国一共有多少座火山吗？</em>
+    </blockquote>    
+     <blockquote class="layui-elem-quote">
+    问题2：<em class="layui-word-aux">中国境内最北边的一座火山海拔高度为多少米？</em>
+    </blockquote> 
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+    <script type="text/javascript" src="../../js/innerPage_volcano.js"></script>
+</body>
+</html>

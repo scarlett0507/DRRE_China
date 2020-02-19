@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>灾害预测图</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">18分钟</em></p>
+    </blockquote>
+    <!-- 洪水介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于灾害预测地图</h3></legend>
+        </fieldset>
+    </div>
+    <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+    <p align="left">灾害预测图也叫<a class="tooltip">防灾地图<span class="tooltiptext">Hazard map</span></a>，是预测自然灾害造成的损害并绘制损害范围的地图。图上会显示诸如预测的灾难发生点，破坏程度以及疏散路线和疏散地点之类的信息。<br></p>
+    <p align="left">通过使用防灾地图，人们可以在发生灾难时迅速而准确地撤离，并避免可能发生二次灾难。日本1990年代以来，一直在促进防灾软件对策的准备工作。2000年有珠山火山爆发时，居民、游客和政府根据危险地图撤离，从而防止了人身伤害。<br></p>
+    <p align="left">最近，国家和地方政府一直在努力创建危害图。多存在两种方式：在纸张和图像文件（包括PDF）形式的静态地图以及在网络上使用的动态地图。<br></p>
+   </div>
+   
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>静态灾害预测地图</h3></legend>
+        </fieldset>
+    </div>
+   <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+     <p align="left">纸介质的优点是它随时可用。但是，由于它是静态地图，因此只能看到特定范围和比例的信息。<br></p>
+     <div class="content"><p>下面为静态吉林市洪水灾害预测地图。</div> 
+       <div class="demo" >
+        <img id="myImg" src="../../img/disaster/JILIN.jpg" style="width:90%; height:90%;" alt="吉林市洪水灾害预测地图" />
+        <v><br>仅作为灾害预测地图学习材料使用</v>
+     </div>
+   </div>
+      <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>动态灾害预测地图</h3></legend>
+        </fieldset>
+    </div>
+   <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+     <p align="left">动态地图需要网络连接，但可以看到想要看到的区域，范围和详细信息。还可以通过叠加各种类型的信息来获得新的信息。例如，在地图上打开房屋数据并覆盖洪水数据，以查看房屋是否在洪水淹没的位置，或者是否有过去的灾难数据。另外，可以使用GIS分析知道能通行的道路和由于洪水而无法通行的道路，这也将有助于躲避危险。<br></p> 
+       <div class="demo" >
+        <iframe src="hazardConcept_map.html" frameborder="0" style="width:100%; height:600px;"></iframe>
+        <v><br>仅作为灾害预测地图学习材料使用</v>
+     </div>
+   </div>
+
+      <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>主要灾害预测图类型</h3></legend>
+        </fieldset>
+    </div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">河流洪水</h2>
+              <div class="layui-colla-content">
+                <p>通常为“洪水灾害地图”。在此地图中，标记出有被洪水淹没可能性的区域，同时也会标出地图中能够作为撤离的地点等。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">山体滑坡</h2>
+              <div class="layui-colla-content">
+                <p>在地图中标出泥沙灾害预警区域，并显示为“泥石流灾害预警区域地图”。并提供滑坡灾害信息的通信方法，撤离地点等。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">地震</h2>
+              <div class="layui-colla-content">
+                <p>地震后可能发生的<a class="tooltip">液化<span class="tooltiptext">土壤因地震造成原本在深层土壤的水分被挤压到表层，土壤颗粒间的有效应力下降为零，呈现如液态的状况。</span></a>范围，可能发生大火的范围等。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">火山</h2>
+              <div class="layui-colla-content">
+                <p>火山口出现的位置（范围），熔岩流动的范围，火山碎屑和火山灰的沉降范围、泥浆流的范围等。使用火山灾害图有一些特殊考虑。地图上显示的火山现象不是瞬间（短时间内）发生的，而是随时间变化而发生的。 另外，火山口的位置也是预测，因此泥流等的下沉范围也是预测。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">海啸</h2>
+              <div class="layui-colla-content">
+                <p>海啸可能淹没区域，海啸期间道路封闭的地方等。</p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+   
+   <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>小结</h3></legend>
+        </fieldset>
+    </div>
+   <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+     <p align="left">我们不知道什么时候会发生自然灾害。 这就是为什么灾害预测地图对于保护生命和财产如此重要。 当然，灾害图只是预测灾难的可视化，因此它可能与实际灾难的规模，范围和破坏有所不同。 经常了解灾害的人可以帮助大家在紧急情况时将危险降到最低。<br></p>
+   </div>
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+</body>
+</html>

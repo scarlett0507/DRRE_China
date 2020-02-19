@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>landslides</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">8分钟</em></p>
+    </blockquote>
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于山体滑坡</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">山体滑坡<span class="tooltiptext">Landslide</span></a>，又称山崩、山泥倾泻或土溜，是指在重力的影响下块体沿着一段山坡下滑的坍方现象。若是土体坍方时，混和雨水或河水则演变成土石流。</p></div>
+    <div class="content"><p>下方地图为2014年3月22日，当地时间上午10:37，美国华盛顿州奥索以东4英里处发生的重大滑坡3D地图，点击右上角可查看山体滑坡前后的地形变化。</p></div>
+    <div class="demo" >
+        <iframe src="landslide_map.html" frameborder="0" style="width:100%; height:600px;"></iframe>
+    </div>
+   
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>视频：认识山体滑坡泥石流</h3></legend>
+        </fieldset>
+    </div>  
+ <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+      <div class="layui-card">
+      <div class="layui-card-body">
+      <p align="left">2017年四川凉山山洪泥石流已致20多人死亡，数百户几百人不同程度受灾。灾害来得太快太突然！在车里，在家中，在野外等，突遇滑坡泥石流，你该如何避难逃生？这部影片带您了解。<br></p>
+        </div>
+ <video class="center" width="480" height="360" controls="controls">
+  <source src="https://scarlett0507.github.io/disaster-video/landslide.mp4" type="video/mp4" />
+</video>   
+<v><br>© 《视知》</v>
+   </div>
+  </div>
+  </div>
+<div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+    
+     <blockquote class="layui-elem-quote">
+    问题：<em class="layui-word-aux">山体滑坡一般是什么原因造成的呢？</em>
+    </blockquote>    
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>
+       
+</body>
+</html>
