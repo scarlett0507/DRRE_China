@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>地图概念</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">5分钟</em></p>
+    </blockquote>
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>地图的概念</h3></legend>
+        </fieldset>
+    </div>
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+    <p align="left">地图，是根据一定的数学法则，即某种地图投影，将地球或其他星球的自然现象和社会现象通过概括和符号缩绘在平面上的图形。按照统一的设计和要求编制的多幅地图的汇集被称作“地图集”或者“地图册”。</p>
+    <p align="left">地图是依据一定的绘制法则，使用制图方法，通过制图综合在一定的载体上，表达地球（或其他天体）上各种事物的空间分布、联系及时间中的发展变化状态绘制的图形。</p>
+    </div>
+    
+     <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>世界地图</h3></legend>
+        </fieldset>
+    </div>
+      <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+     <p align="left">地图将地球上的自然和人文现象，使用地图语言，通过制图综合，缩小反映在平面上，反映各种现象的空间分布、组合、联系、数量和质量特征及其在时间中的发展变化。<br></p>
+     <div class="content"><p>下面为世界地图，基于了NASA2005年蓝色弹珠照片。</div> 
+       <div class="demo" >
+        <img id="myImg" src="../../img/map/map.jpg" style="width:90%; height:90%;" alt="吉林市洪水灾害预测地图" />
+        <v><br>仅作为地图学习材料使用</v>
+     </div>
+   </div>
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+    <blockquote class="layui-elem-quote">
+    问题：<em class="layui-word-aux">日常生活中，你会借助地图来了解陌生的地方吗？</em>
+    </blockquote>  
+      
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>
+       
+</body>
+</html>
