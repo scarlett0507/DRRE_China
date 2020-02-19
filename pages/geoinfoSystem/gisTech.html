@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GIS相关技术</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">8分钟</em></p>
+    </blockquote>
+     <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>GIS与相关技术</h3></h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p>地理信息系统（<a class="tooltip">GIS<span class="tooltiptext">Geographic Information System</span></a>）与全球定位系统（<a class="tooltip">GPS<span class="tooltiptext">Global Positioning System</span></a>）、遥感（<a class="tooltip">RS<span class="tooltiptext">Remote Sensing</span></a>）合称3S。它们在3S体系中各自充当着不同的角色，RS是信息采集（提取）的主力；GPS是对遥感图像（像片）及从中提取的信息进行定位，赋予坐标，使其能和"电子地图"进行套合；GIS是信息的"大管家"。</div>
+   
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">GPS</h2>
+              <div class="layui-colla-content">
+                <p>GPS是由处于2万公里高度的6个轨道平面中的24颗卫星组成。此系统用于在任何时间，向地球上任何地方的用户提供高精度的位置、速度、时间信息，或给用户提供其邻近者的这种信息。</p>
+              </div>
+              <div class="layui-colla-content">
+                <p>一张地图是没有坐标的，而地图上的信息，特别是遥感图像上的信息，是需要定出位置的，只有 "有位置的信息"，才能成为地理信息。那么怎样来给遥感像片确定位置呢？有一种方便、快捷的手段，就是"全球卫星"定位系统。该系统是通过太空中的24颗GPS卫星来完成的。只需其中4颗卫星，就能迅速确定地球上的位置。在确定位置时，仅需要一台像手机大小的"卫星定位仪"就可以了。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">RS</h2>
+              <div class="layui-colla-content">
+                <p>"遥感"，顾名思义，就是遥远的感知。地球上的每一个物体都在不停地吸收、发射和反射信息和能量。其中的电磁波早已经被人们所认识和利用。人们发现不同物体的电磁波特性是不同的。遥感就是根据这个原理来探测地表物体对电磁波的反射和其发射的电磁波，从而提取这些物体的信息，完成远距离识别物体。<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              <div class="layui-colla-content">
+                <p>"天气预报"中所播放的"卫星气象云图"就是由"气象卫星"拍摄的"云"的图像。气象观测只不过是遥感技术众多应用的一个领域。各种卫星通过不同的遥感技术实现不同的用途，如气象卫星是用于气象的观测预报；海洋水色卫星用于海洋观测；陆地资源卫星用于陆地上所有土地、森林、河流、矿产、环境资源等的调查。遥感技术使用的负载工具，不仅仅是卫星，还可以是航天飞机、飞机、气球、航模飞机、汽车、照相机的三角架等，从而实现了在不同高度上应用遥感技术，使之为我们不同的工作目的服务。</p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+        <!-- 洪水发生原因的相关图片，id01是降雨，id02是高潮，id03是融雪 -->
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/GIS/GPS.svg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+     <!-- 洪水发生原因的相关图片，id01是降雨，id02是高潮，id03是融雪 -->
+    <div id="id02" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/GIS/RS.jpg" alt="flood" style="width:70%; height:70%;">
+          </div> 
+      </div>
+    </div>
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>利用GIS技术显示遥感图像与GPS信息</h3></legend>
+        </fieldset>
+    </div>
+    <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+    <div class="content"><p>下方的地图可以在道路地图与遥感影像地图之间切换，也可显示地图的经纬度位置。</div>
+    <div class="demo" >
+        <iframe src="gisTech_map.html" frameborder="0" style="width:100%; height:600px;"></iframe>
+    </div>
+    </div>
+     <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+ 
+    <blockquote class="layui-elem-quote">
+    问题：<em class="layui-word-aux">简述3S分别为电子地图提供着什么支持。</em>
+    </blockquote>  
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>
+       
+</body>
+</html>
