@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>气候</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">10分钟</em></p>
+    </blockquote>
+    <!-- 洪水介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于气候</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">气候<span class="tooltiptext">Climate</span></a>包括温度、湿度、气压、风力、降水量、大气成分数及众多其他气象要素在很长时期及特定区域内的统计数据。与气候相比，天气是指这些气象要素在近两周内的实时状态。气候的时间尺度为月、季、年、数年到数百年以上。根据世界气象组织（WMO）的规定，一个标准气候计算时间为30年。</div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">气候分类</div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">热带气候</h2>
+              <div class="layui-colla-content">
+                <p>把常年月均温在15℃以上的地区划为热带气候区。根据降水把热带气候分为热带雨林气候（2000mm以上）、热带季风气候（2000mm～1500mm，大陆东岸）、热带草原气候（1500mm～200mm）和热带沙漠气候（0mm～200mm）。典型动物是猩猩、河马、长颈鹿、羚羊、象、孔雀、袋鼠、沙漠狐等。植被是热带雨林、热带草原、热带季雨林和荒漠植被。土壤为砖红壤、红壤、荒漠土等。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">亚热带气候</h2>
+              <div class="layui-colla-content">
+                <p>把最热月在20摄氏度以上且最冷月在0℃～15℃的地区划为亚热带气候区。根据降水把亚热带气候分为亚热带季风气候（1000mm以上，大陆东岸，除东亚外均称亚热带季风性湿润气候）和地中海气候（300mm～1000mm，大陆西岸）。典型动物是阿尔卑斯山羊、猕猴、灵猫等。植被是亚热带常绿阔叶林、亚热带常绿硬叶林。土壤为红壤、黄壤等。<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">温带气候</h2>
+              <div class="layui-colla-content">
+                <p>把最热月在20摄氏度以上且最冷月均温在0℃以下（冬冷夏热型），常年月均温在0至20摄氏度之间（终年温和型）的地区划为温带气候区。终年温和型的为温带海洋性气候（700mm～1000mm，大陆西岸）；冬冷夏热型根据季风是否显著分为温带季风气候（400mm以上，大陆东岸）、温带大陆性气候（400mm以下）。在简化的气候分类法中，常将亚寒带针叶林气候划归温带大陆性气候。典型动物有松鼠、黑熊、黄羊、旱獭、双峰驼、子午沙鼠、驼鹿、紫貂等。植被有温带落叶阔叶林、温带混交林、温带森林、温带草原、亚寒带针叶林。土壤为黑钙土、荒漠土、灰化土、棕壤、褐土等。<button onclick="document.getElementById('id03').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">寒带气候</h2>
+              <div class="layui-colla-content">
+                <p>把最热月均温在10℃以下的地区划为寒带气候区。根据最热月均温把寒带气候分为苔原气候（最热月均温突破0℃）和冰原气候（最热月均温不突破0℃）。典型动物有驯鹿、北极狐、北极熊、海豹等。植被有寒带苔原和极地冰原，在极度寒冷的地区没有植被覆盖。土壤为冰沼土，冰原气候区未发育土壤。<button onclick="document.getElementById('id04').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">高原山地气候</h2>
+              <div class="layui-colla-content">
+                <p>该气候区垂直自然带同赤道向两极出现的水平自然带相类似，其带谱的多少与山地海拔高度以及所处的纬度有关。其基带与水平地带性决定的自然带一致，雪线高度与气温呈正比，与降水呈反比。<button onclick="document.getElementById('id05').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/re.jpeg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+     <div id="id02" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/fu.png" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="id03" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/wen.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="id04" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id04').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/han.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="id05" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id05').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/gao.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>中国气候</h3></legend>
+        </fieldset>
+    </div>
+    
+ <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-card">
+    <p align="left">1. 气候复杂多样。中国幅员辽阔，跨纬度较广，距海远近差距较大，加之地势高低不同，地形类型及山脉走向多样，因而气温降水的组合多种多样，形成了多种多样的气候。从气候类型上看，东部属季风气候（又可分为亚热带季风气候、温带季风气候和热带季风气候），西北部属温带大陆性气候，青藏高原属高寒气候。从温度带划分看，有热带、亚热带、暖温带、中温带、寒温带和青藏高原区。从干湿地区划分看，有湿润地区、半湿润地区、半干旱地区、干旱地区之分。而且同一个温度带内，可含有不同的干湿区；同一个干湿地区中又含有不同的温度带。因此在相同的气候类型中，也会有热量与干湿程度的差异。地形的复杂多样，也使气候更具复杂多样性。<button onclick="document.getElementById('id06').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button><br></p>
+    <p align="left">2. 季风气候显著。中国的气候具有夏季高温多雨、冬季寒冷少雨、高温期与多雨期一致的季风气候特征。由于中国位于世界上最大的大陆——亚欧大陆东部，又在世界上最大的大洋——太平洋西岸，西南距印度洋也较近，因之气候受大陆、大洋的影响非常显著。冬季盛行从大陆吹向海洋的偏北风，夏季盛行从海洋吹向陆地的偏南风。冬季风产生于亚洲内陆，性质寒冷、干燥、在其影响下，中国大部地区冬季普遍降水少，气温低，北方更为突出。<br></p>
+    <p align="left">3. 气候条件的优势。复杂多样的气候，使世界上大多数农作物和动植物都能在中国找到适宜生长的地方，使中国农作物与动植物资源都非常丰富。例如玉米的故乡在墨西哥，引种到中国后却广泛种植，已成为中国重要的粮食作物之一。红薯最早引种在浙江一带，在全国普遍种植。季风气候显著的特征，也为中国农业生产提供了有利条件，因夏季气温高，热量条件优越，这使许多对热量条件需求较高的农作物在中国种植范围的纬度远比世界上其他同纬度国家的偏高，例如水稻可在北纬52°的黑龙江省呼玛县种植。<br></p>
+    </div>
+    </div>
+    </div>
+  
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>气候影响</h3></legend>
+        </fieldset>
+    </div>
+     <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-card">
+    <p align="left">中国气候虽然有许多方面有利于发展农业生产，但也有不利的方面，中国灾害性天气频繁多发，对中国生产建设和人民生活也常常造成不利的影响，其中旱灾、洪灾、寒潮、台风等是对中国影响较大的主要灾害性天气。<br></p>
+    <p align="left">中国的旱涝灾害平均每年发生一次，北方以旱灾居多，涝灾较少，南方则旱涝灾害均会不定期发生。在夏秋季节，中国东南以及南部沿海等地则常常受到热带风暴——台风的侵袭。台风（热带风暴发展到特别强烈时称为台风）以6——9月最为频繁。<br></p>
+    <p align="left">在中国的秋冬季节，来自蒙古、西伯利亚的冷空气不断南下，冷空气特别强烈时，气温骤降，出现寒潮（即冬季风）。寒潮可造成低温、大风、沙暴、霜冻等灾害。<br></p>
+    </div>
+    </div>
+    </div>
+     <div id="id06" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id06').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/Chinaclimate.jpeg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    
+   <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+    
+     <blockquote class="layui-elem-quote">
+    问题：<em class="layui-word-aux">中国有几种气候类型？</em>
+    </blockquote>    
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+</body>
+</html>

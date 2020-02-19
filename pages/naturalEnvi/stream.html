@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>河流</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">10分钟</em></p>
+    </blockquote>
+    <!-- 洪水介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于河流</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">河流<span class="tooltiptext">River</span></a>（江、河、江河、河道，古称水、川、河川，局地称溪、港、郭勒、沐沦、曲、藏布等）是自然汇入海洋、湖泊的流水，通常为淡水。在少数情况下，河流流入地下或者在汇入另一水体之前便干涸。河流有时会汇入另一条河流。河流是水循环的一环。河流中的水主要来自其流域降水形成的地表径流和其他诸如地下水补给、泉以及自然积雪（比如冰川）存水融化。</div>
+    <div class="content"><p>地球上的水资源有97％为海水，其中淡水仅以3％存在，其中约以三分之二为冰河，人类可使用的淡水仅占全球水资源的0.8%。河流的补给源自于源头的降水或融雪，然而除了直接流入地表外，也有一部分的水渗入土壤成为地下水。雨和雪，只是暂时性的水源补给，主要还是以地下水持续河流水源。大部分的地表水最终将流入海或湖泊。而其余的，就在大气中通过从地表蒸发成水汽或渗透为地下水。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">河流的种类<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">内流河</h2>
+              <div class="layui-colla-content">
+                <p>内流河又称内陆河，指不能流入海洋、只能流入内陆湖或在内陆消失的河流。这类河流的年平均流量一般较小，但因暴雨、融雪引发的洪峰却很大。内流河成因主要是河流流经的区域高温干旱，两岸不但没有支流汇入，而且河水因大量的蒸发、渗漏而消失在内陆。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">外流河</h2>
+              <div class="layui-colla-content">
+                <p>外流河是指最终流入海洋的河流。外流河在流程中由于有支流的汇入，流量通常会越来越大，流程也较长。在河流入海口处会形成三角洲。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">季节性河流</h2>
+              <div class="layui-colla-content">
+                <p>季节性河流又称间歇性河流、时令河，指河流在枯水季节，河水断流、河床裸露；丰水季节，形成水流，甚至洪水奔腾。这类河流通常流经高温干旱的区域，而且年平均流量较小，但因暴雨、融雪引发的洪峰却很大。现时因人类对河流的过度引水、截流会使常年河流变成季节性河流。</p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+     <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/stream.jpg" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+     <div id="id02" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+          <div class="imgstar">
+            <img id="myImg" src="../../img/Natural/ChinaStream.png" alt="flood" style="width:90%; height:90%;">
+          </div> 
+      </div>
+    </div>
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>河流与生态</h3></legend>
+        </fieldset>
+    </div>
+     <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">河流一直以来都被用作灌溉、饮食、交通、防御、洗浴、驱动机器的水力资源来源以及倾倒处理过废物的场所。</div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">民生</h2>
+              <div class="layui-colla-content">
+                <p>河流自远古时期以来，就是人类的一大食物来源，人们靠着渔捞及引用河流水源从事农业活动。河流提供了多种鱼类和其他水中生物供给人类食用，同时还提供了淡水水源，用以饮用和灌溉，因此大部分的古文明起源都位于河流的两岸。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">居住</h2>
+              <div class="layui-colla-content">
+                <p>河流沉积物砾石和沙被大量用于建筑当中，然而河流的形状与型态往往还决定了城市布局。河流也是重要的政治分界线以及防御工事。多瑙河曾经是罗马帝国长期的边界，如今是保加利亚和罗马尼亚的分界线。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">航运</h2>
+              <div class="layui-colla-content">
+                <p>河流用作航运的功能已经历经千年。最早有关河运的证据是公元前3300年巴基斯坦西北部的印度河流域文明。河流航运提供了一种廉价的交通方式，而且至今仍然在大多数主要河流上大量开展，例如亚马孙河、恒河、密西西比河、印度河以及长江等。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">娱乐</h2>
+              <div class="layui-colla-content">
+                <p>在一些河流上游，河流湍急，常常出现瀑布与急流，这些急流往往被用于漂流等娱乐项目，如溯溪及泛舟。</p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+   <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>视频：了解河流地貌的发育过程</h3></legend>
+        </fieldset>
+    </div>  
+    
+ <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-card">
+      <video class="center" width="480" height="360" controls="controls">
+      <source src="https://scarlett0507.github.io/disaster-video/stream.mp4" type="video/mp4" />
+      </video>   
+      <v><br>© Minute Earth</v>
+   </div>
+  </div>
+ </div>
+  
+  <div id="title">
+  <fieldset class="layui-elem-field layui-field-title">
+    <legend><h3>灾害与防治</h3></legend>
+  </fieldset>
+ </div>
+ <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-card">
+    <p align="left">洪灾：人类为生存与发展，常与山争地、与水争地，以至于产生洪灾、山崩、土石流等环境灾害。其危害层面甚广，造成人命伤亡与财产损失难以其数，因此了解洪灾的成因与特性，有助于安排减灾、应变与灾后重建等调整对策。发生洪灾的先决条件诸多，其形成层面主要包含：强降水、地形、土地开发不当等因素。<br></p>
+    <p align="left">防治：湖泊能调节河流的流量，增加湖泊的储水容量便可减少洪灾发生的可能。但湖泊的储水量仍然有限，为了调节河流流量，可以在河流修筑水坝，并在水坝前面兴建人工湖。例如中国的长江流域内，就有超过4万个人工湖，储水量逾1,370亿立方米。也可以在河流的两旁建筑堤坝，防止河水外溢，保护陆地的城市免受泛滥的破坏。要根治洪灾，就必须保存河流上游的自然植被，立例管制伐林，并种植更多树木，可以抓紧土壤，防止淤积物被冲往下游，避免河流下游有过多沉积物。<br></p>
+    </div>
+    </div>
+    </div>
+  
+   <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>课堂小测验</h3></legend>
+        </fieldset>
+    </div>
+     <blockquote class="layui-elem-quote">
+    问题：<em class="layui-word-aux">学习了上面的知识，你认为你所在地区是容易发生洪涝灾害的地区吗？</em>
+    </blockquote>    
+      
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+</body>
+</html>

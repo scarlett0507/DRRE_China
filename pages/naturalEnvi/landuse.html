@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>土地利用</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../layui/css/mind.css" />
+    <link rel="stylesheet" href="../../layui/css/disaster_font.css" />
+</head>
+
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote">
+        <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">返回前一页</a>
+        <p style="text-align:right">推荐学习时间：<em class="layui-word-aux">5分钟</em></p>
+    </blockquote>
+    <!-- 洪水介绍的标题 -->
+    <div id="title">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend><h3>关于土地利用</h3></legend>
+        </fieldset>
+    </div>
+    <div class="content"><p><a class="tooltip">土地利用<span class="tooltiptext">Landuse</span></a>是人类为了生产和生活的目的而进行的长期性或周期性的经营或经济活动。土地利用既受自然条件，又受社会、经济和技术条件的影响，因此土地利用是由上述因素共同作用所决定的土地功能。</div>
+    <div class="content"><p>并非世界上所有的地区都会发生地震。地震与火山分布一样，主要集中在板块相互作用的地区。目前世界上主要分为三个频繁发生地震的“地震带”：环太平洋地震带（占80%）、欧亚地震带、洋中脊地震带。</div>
+    <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
+    <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">土地利用的影响因素</div>
+            <div class="layui-card-body">
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">自然因素</h2>
+              <div class="layui-colla-content">
+                <p>土地的地形、地貌、地质、坡度、海拔、土壤酸碱度、有机质含量、土壤团粒结构、微量元素种类及含量、水分含量、降水量、生态环境等自然因素都会影响土地利用。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">经济因素</h2>
+              <div class="layui-colla-content">
+                <p>在自然经济条件下，土地的利用主要依据土地的自然条件而定。所谓经济因素，就是影响土地利用后的经济效益、经济价值的因素。其核心就是土地产出物的价值及获得这些产出物的投入。</p>
+              </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">社会因素</h2>
+              <div class="layui-colla-content">
+                <p>除自然、经济因素以外的因素都可归入社会因素，包括政策、法规、传统风俗习惯等。例如，在环境优美而又适宜居住的地方，政府为了保护这里的自然文化遗产，禁止在这样的地方从事任何生产和消费活动（旅游除外）。</p>
+              </div>
+              </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+ 
+    <div class="layui-footer" style="text-align:right">
+                <!-- 底部固定区域 -->
+                <font size="1.5">© Csis -  如对本网页有任何问题，请联系：</font>
+                <a href="#"><font size="2">songjiali@csis.u-tokyo.ac.jp</font></a>
+                <a href="http://www-new.csis.u-tokyo.ac.jp" rel="nofollow"><img src="../../img/logo_csis_mini.png" class="footerlogo" width="20%" /></a>
+                <font size="0.5">...</font>
+     </div>
+    <script type="text/javascript" src="../../layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: "../../js/"
+        }).extend({
+            "bodyTab": "bodyTab"
+        })
+        layui.use(['code', 'jquery', 'bodyTab'], function () {
+            var $ = layui.$,
+                tab = layui.bodyTab();
+            layui.code({
+                about: false
+            });
+            $(".goDataMenu").click(function () {
+                parent.tab.tabAdd($(this));
+            })
+        })
+    </script>   
+</body>
+</html>
