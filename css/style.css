@@ -58,7 +58,7 @@ a {
   left: 0;
   height: 25vh;
   width: 100%;
-  background-image: url("../img/map_small.jpg");
+  background-image: url("../img/catalog/map_small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -75,28 +75,28 @@ a {
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/gis_small.jpg");
+  background-image: url("../img/catalog/gis_small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: 'img/gis_small.jpg';
+  content: 'img/catalog/gis_small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/nature_small.jpg");
+  background-image: url("../img/catalog/nature_small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: 'img/nature_small.jpg';
+  content: 'img/catalog/nature_small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("../img/disaster_small.jpg");
+  background-image: url("../img/catalog/disaster_small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: 'img/disaster_small.jpg';
+  content: 'img/catalog/disaster_small.jpg';
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */
@@ -142,37 +142,37 @@ a {
     content: 'img/map_big.jpg';
   }
   .projects-container .cd-single-project:first-of-type::after {
-    background-image: url("../img/map_big.jpg");
+    background-image: url("../img/catalog/map_big.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: 'img/gis_big.jpg';
+    content: 'img/catalog/gis_big.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("../img/gis_big.jpg");
+    background-image: url("../img/catalog/gis_big.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: 'img/nature_big.jpg';
+    content: 'img/catalog/nature_big.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("../img/nature_big.jpg");
+    background-image: url("../img/catalog/nature_big.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
-    content: 'img/disaster_big.jpg';
+    content: 'img/catalog/disaster_big.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
-    background-image: url("../img/disaster_big.jpg");
+    background-image: url("../img/catalog/disaster_big.jpg");
   }
   .projects-container .cd-single-project::after {
     height: 100vw;
@@ -248,12 +248,10 @@ a {
   font-size: 6rem;
   line-height: 3;
   font-weight: 900;
-　font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
 　color: #2B3687;
 }
 .cd-title p {
   font-size: 1.4rem;
-  font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
   font-style: italic;
   line-height: 1.2;
   padding: .4em 2em;
@@ -348,7 +346,7 @@ a {
   position: fixed;
   top: 30px;
   right: 5%;
-  background: url("../img/cd-icon-close-mobile.svg") no-repeat center center;
+  background: url("../img/catalog/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -357,7 +355,7 @@ a {
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
-    background-image: url("../img/cd-icon-close-desktop.svg");
+    background-image: url("../img/catalog/cd-icon-close-desktop.svg");
   }
 }
 
@@ -370,11 +368,11 @@ a {
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../img/cd-icon-arrow-mobile.svg") no-repeat center center;
+  background: url("../img/catalog/cd-icon-arrow-mobile.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-scroll {
-    background-image: url("../img/cd-icon-arrow-desktop.svg");
+    background-image: url("../img/catalog/cd-icon-arrow-desktop.svg");
   }
 }
 
