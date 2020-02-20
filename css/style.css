@@ -68,7 +68,7 @@ a {
 }
 .projects-container .cd-single-project::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/map_small.jpg';
+  content: 'img/catalog/map_small.jpg';
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
@@ -139,7 +139,7 @@ a {
     transition: width 0s;
   }
   .projects-container .cd-single-project:first-of-type::before {
-    content: 'img/map_big.jpg';
+    content: 'img/catalog/map_big.jpg';
   }
   .projects-container .cd-single-project:first-of-type::after {
     background-image: url("../img/catalog/map_big.jpg");
