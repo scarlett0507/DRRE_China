@@ -8,12 +8,10 @@
 
 body {
     font-size:100% ;
-    font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
     line-height: 1
 }
 div#title {
     width: 100%;
-    font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
     color: #393e4f;
     text-align: center;
     font-size: 2em;
@@ -30,7 +28,6 @@ li{
 p {
     width: 90%;
     height: 25%;
-    font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
     color: #393e4f;
     margin-right: 10px;
     letter-spacing: 3px;
