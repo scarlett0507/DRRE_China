@@ -9,6 +9,7 @@
 body {
     font-size:100% ;
     line-height: 1;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 img{
     width:auto;
@@ -26,6 +27,7 @@ v {
     line-height: 150%;
     margin: 0 auto;
     font-size: 0.8em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 div.layerToggle {
     bottom: 5%;
@@ -44,6 +46,7 @@ div#title {
     color: #000000;
     text-align: center;
     font-size: 1.0em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 .content {
     color: #000000;
@@ -60,6 +63,7 @@ p {
     line-height: 150%;
     margin: 0 auto;
     font-size: 0.8em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 div.container {
    height: 50%;
@@ -84,5 +88,6 @@ div.container {
    z-index: 100;  
    left:92%;  
    bottom:93%;  
+   font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }  
 .my_button:hover {opacity: 1}
