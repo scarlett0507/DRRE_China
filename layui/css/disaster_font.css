@@ -8,13 +8,15 @@
 
 body {
     font-size:100% ;
-    line-height: 1
+    line-height: 1;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 div#title {
     width: 100%;
     color: #393e4f;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 .content {
     color: #393e4f;
@@ -33,7 +35,7 @@ p {
     letter-spacing: 3px;
     line-height: 150%;
     margin: 0 auto;
-    font-size: 0.95em;
+    font-size: 1.2em;
 }
 v {
     width: 90%;
@@ -43,7 +45,7 @@ v {
     letter-spacing: 3px;
     line-height: 150%;
     margin: 0 auto;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 .demo {
