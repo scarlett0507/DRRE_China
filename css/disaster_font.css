@@ -8,6 +8,7 @@
 
 body {
     font-size:100% ;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
     line-height: 1
 }
 div#title {
@@ -15,6 +16,7 @@ div#title {
     color: #393e4f;
     text-align: center;
     font-size: 2em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 .content {
     color: #393e4f;
@@ -34,6 +36,7 @@ p {
     line-height: 150%;
     margin: 0 auto;
     font-size: 1.3em;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 
 .demo {
