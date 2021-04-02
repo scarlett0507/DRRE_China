@@ -74,11 +74,10 @@ div.container {
   background-color: #009588;
   border: none;
   color: #FFFFFF;
-  padding: 0.8% 1.6%;
-  panding:auto;
+  padding: 0.8% 1.0%;
   text-align: center;
   font-size: 0.8em;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
@@ -86,9 +85,8 @@ div.container {
   border-radius: 12px;
   position: absolute;  
   z-index: 100;  
-  left:92%;  
-  bottom:93%;  
+  left:12px;  
+  top:210px;  
   font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
-
 }  
 .my_button:hover {opacity: 1}
